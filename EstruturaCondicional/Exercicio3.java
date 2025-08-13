@@ -17,7 +17,7 @@ public class Exercicio3 {
 
 
         if (minutos <= 100){
-        System.out.println(valorTotal);
+            System.out.println(valorTotal);
         }
 
         else {
