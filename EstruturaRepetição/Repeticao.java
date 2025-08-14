@@ -15,7 +15,7 @@ public class Repeticao {
 
         while (x != 0) {
             soma = soma + x;
-            System.out.println("Numero errado, tente novamente !!!");
+            System.out.println("Numero errado, tente novamente!!");
             x = sc.nextInt();
             
         }
