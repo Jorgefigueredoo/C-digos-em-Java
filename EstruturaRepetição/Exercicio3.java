@@ -30,3 +30,4 @@ public class Exercicio3 {
         sc.close();
     }
 }
+// Fim do exercicio
