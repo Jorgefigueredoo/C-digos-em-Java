@@ -23,5 +23,10 @@ public class Repeticao {
         System.out.println(soma);
         
         sc.close();
+   
+        // Fim do exercicio
+   
     }
+
+
 }
