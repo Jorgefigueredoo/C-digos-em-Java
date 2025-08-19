@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Triangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

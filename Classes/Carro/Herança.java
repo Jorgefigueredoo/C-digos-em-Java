@@ -1,4 +1,4 @@
-package Carro;
+package Classes.Carro;
 
 public class Herança {
     public static void main(String[] args) {
