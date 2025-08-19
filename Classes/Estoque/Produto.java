@@ -1,4 +1,4 @@
-package Estoque;
+package Classes.Estoque;
 
 public class Produto {
     

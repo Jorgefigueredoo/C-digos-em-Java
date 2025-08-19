@@ -1,4 +1,4 @@
-package Estoque;
+package Classes.Estoque;
 
 import java.util.Scanner;
 
