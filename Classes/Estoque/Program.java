@@ -7,24 +7,25 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        Produto produto = new Produto();
-
+        
         System.out.println("Enter product data: ");
         System.out.println("Name: ");
-        produto.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.println("Price: ");
-        produto.price = sc.nextDouble();
+        double price = sc.nextDouble();
 
         System.out.println("Quantity in Stock");
-        produto.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
 
+        Produto produto = new Produto(name, price, quantity);
+        
         System.out.println();
         System.out.println("Produtodo Data: " + produto);
 
         System.out.println();
         System.out.printf("Enter the number of products to be added in stock ");
-        int quantity = sc.nextInt();
+        quantity = sc.nextInt();
         produto.addProducts(quantity);
 
         System.out.println();
