@@ -1,8 +1,10 @@
-package Vetores;
+package Vetores.Produto;
 
 import java.util.Scanner;
 
-public class Program2 {
+import Vetores.Product;
+
+public class Program {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -25,7 +27,7 @@ public class Program2 {
         double media = soma / n;
 
         System.out.println("Preço médio: " + media);
-
+        System.out.println(vect);
         sc.close();
     }
 }
