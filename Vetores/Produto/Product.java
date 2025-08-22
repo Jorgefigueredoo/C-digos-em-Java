@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Produto;
 
 public class Product {
     

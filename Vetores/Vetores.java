@@ -1,4 +1,4 @@
-package Vetores.Produto;
+package Vetores;
 
 import java.util.Scanner;
 
