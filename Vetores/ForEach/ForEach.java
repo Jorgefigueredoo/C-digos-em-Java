@@ -13,6 +13,6 @@ public class ForEach {
         for (String obj : vect) {
             System.out.println(obj);
         }
-        System.out.println(vect);
+
     }
 }
