@@ -15,10 +15,10 @@ public class DataHora {
         LocalDate d04 = LocalDate.parse("2025-08-26");
         LocalDateTime d05 = LocalDateTime.parse("2025-08-26T15:38:45");
 
-        System.out.println("d01 =  " + d01);
-        System.out.println("d02 =  " + d02);
-        System.out.println("d03 = " + d03);
-        System.out.println("d04 = " + d04);
-        System.out.println(" = " + d05);
+        System.out.println("d01 =  " + d01.toString());
+        System.out.println("d02 =  " + d02.toString());
+        System.out.println("d03 = " + d03.toString());
+        System.out.println("d04 = " + d04.toString());
+        System.out.println("d05 = " + d05.toString());
     }
 }
