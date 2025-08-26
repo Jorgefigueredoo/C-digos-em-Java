@@ -36,7 +36,7 @@ public class DataHora {
         System.out.println("d07 = " + d07.toString());
         System.out.println("d08 = " + d08.toString());
         System.out.println("d09 = " + d09.toString());
-        System.out.println("d010 = " + d10.toString());
-        System.out.println("d011 = " + d11.toString());
+        System.out.println("d10 = " + d10.toString());
+        System.out.println("d11 = " + d11.toString());
     }
 }
