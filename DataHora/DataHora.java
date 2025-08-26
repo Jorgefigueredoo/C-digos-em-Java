@@ -24,6 +24,9 @@ public class DataHora {
         LocalDate d08 = LocalDate.parse("26/08/2005", fmt1);
         LocalDateTime d09 = LocalDateTime.parse("26/08/2005 15:38", fmt2);
 
+        LocalDate d10 = LocalDate.of(2005, 8, 26);
+        LocalDateTime d11 = LocalDateTime.of(2005, 8, 26, 16, 1, 44);
+
         System.out.println("d01 =  " + d01.toString());
         System.out.println("d02 =  " + d02.toString());
         System.out.println("d03 = " + d03.toString());
@@ -33,5 +36,7 @@ public class DataHora {
         System.out.println("d07 = " + d07.toString());
         System.out.println("d08 = " + d08.toString());
         System.out.println("d09 = " + d09.toString());
+        System.out.println("d010 = " + d10.toString());
+        System.out.println("d011 = " + d11.toString());
     }
 }
