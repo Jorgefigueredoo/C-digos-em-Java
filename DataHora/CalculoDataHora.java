@@ -31,9 +31,13 @@ public class CalculoDataHora {
         System.out.println("pastWeekInstant = " + nextWeekInstant);
         System.out.println("nextWeekInstant = " + nextWeekInstant);
 
-        Duration t1 = Duration.between(pastWeekLocalDateTime, d05);
+        Duration t1 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
+        Duration t2 = Duration.between(pastWeekLocalDateTime, d05);
+        Duration t3 = Duration.between(pastWeekInstant, d06);
 
         System.out.println("t1 dias: " + t1.toDays());
+        System.out.println("t2 dias: " + t2.toDays());
+        System.out.println("t3 dias: " + t3.toDays());
 
     }
 }
