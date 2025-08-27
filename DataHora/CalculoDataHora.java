@@ -1,5 +1,6 @@
 package DataHora;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -29,6 +30,10 @@ public class CalculoDataHora {
 
         System.out.println("pastWeekInstant = " + nextWeekInstant);
         System.out.println("nextWeekInstant = " + nextWeekInstant);
+
+        Duration t1 = Duration.between(pastWeekLocalDateTime, d05);
+
+        System.out.println("t1 dias: " + t1.toDays());
 
     }
 }
