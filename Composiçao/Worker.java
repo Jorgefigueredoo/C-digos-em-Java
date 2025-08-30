@@ -49,4 +49,12 @@ public class Worker {
         return sum;
     }
 
+    public Departament getDepartment() {
+        return this.departament; // ou simplesmente "return departament;"
+    }
+
+    public String getName() {
+        return this.name; // ou simplesmente "return name;"
+    }
+
 }
