@@ -1,7 +1,8 @@
 package Composiçao.StringBuilder;
 
-import java.util.Date;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class Post {
@@ -13,16 +14,11 @@ public class Post {
 
     private List<Comment> comments = new ArrayList<>();
 
-    public Post(Date moment, String title, String content, Integer likes, List<Comment> comments) {
+    public Post(Date moment, String title, String content, Integer likes) {
         this.moment = moment;
         this.title = title;
         this.content = content;
         this.likes = likes;
-        this.comments = comments;
-    }
-
-    public Post(Date date, String string, String string2, int i) {
-        // TODO Auto-generated constructor stub
     }
 
     public Date getMoment() {
@@ -57,10 +53,6 @@ public class Post {
         this.likes = likes;
     }
 
-    public List<Comment> getComments() {
-        return comments;
-    }
-
     public void addComment(Comment comment) {
         comments.add(comment);
     }
@@ -69,4 +61,19 @@ public class Post {
         comments.remove(comment);
     }
 
+    public List<Comment> getComments() {
+        return Collections.unmodifiableList(comments);
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(title).append("\n");
+        sb.append(likes).append(" Likes - ").append(moment).append("\n");
+        sb.append(content).append("\n");
+        sb.append("Comments:\n");
+        for (Comment c : comments) {
+            sb.append(c.getText()).append("\n");
+        }
+        return sb.toString();
+    }
 }
