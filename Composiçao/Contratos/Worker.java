@@ -1,4 +1,4 @@
-package Composiçao;
+package Composiçao.Contratos;
 
 import java.util.ArrayList;
 import java.util.Calendar;

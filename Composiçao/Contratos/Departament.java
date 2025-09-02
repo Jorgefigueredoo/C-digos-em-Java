@@ -1,4 +1,4 @@
-package Composiçao;
+package Composiçao.Contratos;
 
 public class Departament {
 

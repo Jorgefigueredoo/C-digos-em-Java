@@ -1,4 +1,4 @@
-package Composiçao;
+package Composiçao.Contratos;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

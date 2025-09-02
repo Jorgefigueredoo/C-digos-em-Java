@@ -1,4 +1,4 @@
-package Composiçao;
+package Composiçao.Contratos;
 
 import java.util.Date;
 
@@ -43,5 +43,6 @@ public class HourContratc {
 
     public double totalValue() {
         return valuePerHour * hours;
+
     }
 }
