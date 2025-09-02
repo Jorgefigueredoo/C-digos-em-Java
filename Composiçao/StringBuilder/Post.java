@@ -11,7 +11,7 @@ public class Post {
     private String content;
     private Integer likes;
 
-    private List <Comment> comments = new ArrayList()<>();
+    private List<Comment> comments = new ArrayList<>();
 
     public Post(Date moment, String title, String content, Integer likes, List<Comment> comments) {
         this.moment = moment;
@@ -20,4 +20,53 @@ public class Post {
         this.likes = likes;
         this.comments = comments;
     }
+
+    public Post(Date date, String string, String string2, int i) {
+        // TODO Auto-generated constructor stub
+    }
+
+    public Date getMoment() {
+        return moment;
+    }
+
+    public void setMoment(Date moment) {
+        this.moment = moment;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Integer getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void addComment(Comment comment) {
+        comments.add(comment);
+    }
+
+    public void removeComment(Comment comment) {
+        comments.remove(comment);
+    }
+
 }
