@@ -1,4 +1,4 @@
-package Herança;
+package Herança.Business;
 
 public class Account {
     private Integer number;
