@@ -1,4 +1,4 @@
-package Herança.MetedosAbstratos;
+package Herança.Metodo;
 
 public enum Color {
     BLACK,
