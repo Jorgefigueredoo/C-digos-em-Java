@@ -29,5 +29,7 @@ public class Exercicio {
             }
         }
         System.out.println("Negative numbers: " + count);
+        sc.close();
     }
+
 }
