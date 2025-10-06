@@ -27,29 +27,21 @@ public class Program {
             System.out.print("Check-out date (dd/MM/yyyy): ");
             Date checkOut = sdf.parse(sc.next());
 
-            if (!checkOut.after(checkIN)) {
-                System.out.println("Error in reservation: Check-out date must be after Check-in date");
-            } else {
-                Reservation reservation = new Reservation(number, checkIN, checkOut);
-                System.out.println("Reservation: " + reservation);
+            Reservation reservation = new Reservation(number, checkIN, checkOut);
+            System.out.println("Reservation: " + reservation);
 
-                System.out.println();
-                System.out.println("Enter data to update the reservation: ");
+            System.out.println();
+            System.out.println("Enter data to update the reservation: ");
 
-                System.out.print("Check-in date (dd/MM/yyyy): ");
-                checkIN = sdf.parse(sc.next());
+            System.out.print("Check-in date (dd/MM/yyyy): ");
+            checkIN = sdf.parse(sc.next());
 
-                System.out.print("Check-out date (dd/MM/yyyy): ");
-                checkOut = sdf.parse(sc.next());
+            System.out.print("Check-out date (dd/MM/yyyy): ");
+            checkOut = sdf.parse(sc.next());
 
-                String error = reservation.updateDates(checkIN, checkOut);
+            reservation.updateDates(checkIN, checkOut);
+            System.out.println("Reservation: " + reservation);
 
-                if (error != null) {
-                    System.out.println("Erro in reservation: " + error);
-                } else {
-                    System.out.println("Reservation: " + reservation);
-                }
-            }
         } catch (ParseException e) {
             System.out.println("Invalid date format. Use dd/MM/yyyy.");
         } catch (InputMismatchException e) {
