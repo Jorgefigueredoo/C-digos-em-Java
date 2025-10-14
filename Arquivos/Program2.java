@@ -33,7 +33,7 @@ public class Program2 {
                     fr.close();
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace(); 
             }
         }
     }
